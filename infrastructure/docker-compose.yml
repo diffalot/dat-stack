@@ -1,0 +1,11 @@
+version: '3'
+services:
+  dns-discovery:
+    build: ./dns-discovery
+    ports:
+      - "53:53"
+  dht-server:
+    build: ./dht-server
+    ports:
+      - "6881:6881"
+
